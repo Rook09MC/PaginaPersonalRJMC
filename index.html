@@ -1,1 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Presentación personal estructurada - Rolando Junior Mendoza Conde">
+
+    <title>Rolando Mendoza - Strange</title>
+
+    <style>
+a{
+  transition:0.2s;
+}
+
+        /* =========================
+           ESTILOS GENERALES
+        ========================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #58a6ff;
+        }
+
+        hr {
+            border: 1px solid #30363d;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+nav{
+  background:#161b22;
+  padding:12px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  text-align:center;
+}
+
+nav a{
+  font-weight:bold;
+  padding:6px 10px;
+  border-radius:6px;
+  transition:.2s;
+}
+
+nav a:hover{
+  background:#21262d;
+}
+
+        /* =========================
+           TABLAS
+        ========================== */
+
+	.table-wrapper{
+  width:100%;
+  overflow-x:auto;
+  margin-bottom:20px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background-color:#161b22;
+  color:#e6edf3;
+  min-width:600px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 0 10px rgba(0,0,0,.3);
+  backdrop-filter: blur(6px);
+}
+
+th{
+  background-color:#21262d;
+  color:#58a6ff;
+}
+
+td,th{
+  border:1px solid #30363d;
+  padding:10px;
+}
+
+tr:nth-child(even) td{
+  background-color:#1c2128;
+}	
+
+        /* =========================
+           IMÁGENES Y VIDEOS
+        ========================== */
+
+        img{
+  width:100%;
+  max-width:100%;
+  border-radius:8px;
+}
+
+iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  height:auto;
+  border-radius:8px;
+}
+
+        /* =========================
+           TEXTAREA
+        ========================== */
+
+textarea{
+  width:100%;
+  background-color:#0d1117;
+  color:#e6edf3;
+  border:1px solid #30363d;
+  padding:10px;
+  border-radius:8px;
+}
+
+        /* =========================
+           MARQUEE
+        ========================== */
+
+        marquee{
+  background-color:#161b22;
+  padding:10px;
+  border-radius:8px;
+}
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media screen and (max-width:768px){
+td, th{
+    padding:8px;
+  }
+
+  body{
+    padding:5px;
+    font-size:14px;
+  }
+
+  h1{font-size:24px;}
+  h2{font-size:18px;}
+  h3{font-size:16px;}
+
+  nav a{
+    font-size:13px;
+  }
+
+}
+
+h1,h2{
+  text-shadow:0 0 10px rgba(88,166,255,.25);
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TITULO -->
+        <h1 align="center">Alchemist</h1>
+
+        <hr>
+
+        <!-- NAVBAR -->
+        <nav>
+
+  <a href="#datos">Datos</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#cancion">Canción</a>
+  <a href="#juego">Juego</a>
+  <a href="#mision">Misión</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#redes">Redes</a>
+
+        </nav>
+	
+        <hr>
+
+        <!-- COMIDAS FAVORITAS -->
+        <h2>Comidas Favoritas</h2>
+
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+
+            <img src="https://i.ytimg.com/vi/Y_Ckwty5dks/maxresdefault.jpg"
+                style="max-width:400px;">
+
+            <img src="https://www.paulinacocina.net/wp-content/uploads/2024/01/pollo-a-la-broaster-Paulina-Cocina-Recetas-1722251878.jpg"
+                style="max-width:400px;">
+
+            <img src="https://www.shutterstock.com/image-photo/poznan-pol-apr-02-2025-260nw-2609175503.jpg"
+                style="max-width:400px;">
+
+        </marquee>
+
+        <hr>
+
+        <!-- DATOS PERSONALES -->
+        <h2 id="datos">Datos Personales</h2>
+	
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th>Campo</th>
+                <th>Información</th>
+            </tr>
+
+            <tr>
+                <td><strong>Nombre</strong></td>
+                <td>Rolando Junior Mendoza Conde</td>
+            </tr>
+
+            <tr>
+                <td><strong>Edad</strong></td>
+                <td>25 años</td>
+            </tr>
+
+            <tr>
+                <td><strong>Carrera</strong></td>
+                <td>Ingeniería de Sistemas</td>
+            </tr>
+
+            <tr>
+                <td><strong>Ciudad</strong></td>
+                <td>La Paz, Bolivia</td>
+            </tr>
+
+            <tr>
+                <td><strong>Dirección</strong></td>
+                <td>Ciudad Satélite</td>
+            </tr>
+
+        </table>
+	</div>
+
+        <br>
+
+        <img
+            src="https://comunidadescolar.com.bo/wp-content/uploads/2018/12/LAPAZ4.jpg"
+            alt="La Paz">
+
+        <br><br>
+
+        <small>
+            <em>La Paz, Bolivia</em>
+        </small>
+
+        <hr>
+
+        <!-- HOBBIES -->
+        <h2 id="hobbies">Intereses y Hobbies</h2>
+
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th>Nº</th>
+                <th>Interés</th>
+            </tr>
+
+            <tr>
+                <td align="center">1</td>
+                <td>Programar</td>
+            </tr>
+
+            <tr>
+                <td align="center">2</td>
+                <td>Escuchar música</td>
+            </tr>
+
+            <tr>
+                <td align="center">3</td>
+                <td>Leer libros</td>
+            </tr>
+
+            <tr>
+                <td align="center">4</td>
+                <td>Aprender nuevas tecnologías</td>
+            </tr>
+
+        </table>
+	</div>
+
+        <hr>
+
+        <!-- CANCIÓN FAVORITA -->
+        <h2 id="cancion">Canción Favorita</h2>
+
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th colspan="2">Llori Pari</th>
+            </tr>
+
+            <tr>
+
+                <!-- VIDEO -->
+                <td width="50%" valign="top">
+
+                    <p><strong>Artista:</strong> Álvaro Díaz & Feid</p>
+
+                    <p><strong>Género:</strong> Reggaetón / Urbano Latino</p>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/BTRTX9JgQeA"
+                        title="Llori Pari"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                    <hr>
+
+                    <h3>¿Por qué es mi canción favorita?</h3>
+
+                    <p>
+                        “Llori Pari” transmite emociones profundas relacionadas
+                        con el amor, la nostalgia y los recuerdos que deja una
+                        persona importante.
+                    </p>
+
+                    <p>
+                        Me gusta porque combina una vibra relajada con una letra
+                        sentimental que conecta fácilmente con emociones reales.
+                        La combinación entre Álvaro Díaz y Feid crea una atmósfera
+                        moderna pero muy emocional.
+                    </p>
+
+                </td>
+
+                <!-- LETRA -->
+                <td width="50%" valign="top">
+
+                    <strong>Letra:</strong>
+
+                    <br><br>
+
+                    <textarea rows="20">
+
+Yo no sé qué hice
+Ya ni pregunto porque todo me lo dicen
+Borracho te texteo lo que te quise
+Pero parece que tu cora' está en un freezer
+Yo que estaba puesto pa' vaquearte y tú prefieres alejarte
+Dime por qué no te decides
+Yo te tiro y tú no me escribes
+Uh, uh, uh, uh-uh, uh
+Es que me gustas, pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensas en mí, yeah
+Uh, uh, uh, uh-uh, uh
+Es que me gustas, pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensa' en mí, yeah
+Uh, uh, uh, uh-uh, uh
+Es que me gustas, pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensas en mí, yeah
+Corriendo detrás de ti llevo un maratón
+Se puso demasiao' frío tu Comme des Garcons, yeah-yeah
+Y yo ni sé ni qué pasó
+Dicen que llora por mí, el pobre diablo de los dos, yeah
+Si no me quiere', ¿pa' qué quiero el corazón, nena?
+Me puse de rodilla' y te pedí perdón, nena
+Un día sé de ti, pero al otro no, nena
+Tenerte que olvidar e' una maldición, nena
+Uh, uh, uh, uh-uh, uh
+Es que me gusta', pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensa' en mí, yeah
+Uh, uh, uh, uh-uh, uh
+Es que me gustas, pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensas en mí, yeah
+Los recuerdo' no se borran
+Ni los errore' que me persiguen ahora (yeah-yeah-yeah)
+Me compré un Role' y sin ti duran más las hora' (yeah-yeah)
+Ma', tú te fuiste y me cambió 'e color el cora' (yeah-yeah)
+Yo no te sigo, pero sigo pendiente (yeah-yeah)
+Tú sabe' que me jodo si no vuelvo a verte
+Tenerte de frente, esto era por siempre
+Ahora solo está' dando vuelta' en mi mente
+Si quiere' volver, sigo aquí (sigo aquí, sigo aquí)
+Todavía estoy puesto pa' ti, yeah, eh
+Uh, uh, uh, uh-uh, uh (eh-yeah, eh-yeah, eh-yeah)
+Es que me gustas, pero no sé nada de ti (eh-yeah, eh-yeah)
+Y hoy me estaba preguntando si aún piensas en mí, yeah
+Uh, uh, uh, uh-uh, uh
+Es que me gustas, pero no sé nada de ti
+Y hoy me estaba preguntando si aún piensa' en mí, yeah
+Te tiro mensaje', pero no te llegan
+Baby, no quería que te fuera'
+To' me dicen que me busque otra jeva
+Pero vivir esto sin ti no era, nena
+Tainy, Tainy
+Nena
+Alvarito y FERXXO
+Nena
+Dime qué nos pasó
+Nena
+Dime qué nos pasó
+Nena
+Dime, Manu
+NEON16, yeah-yeah
+Twelve Floor, Twelve Floor, baby
+
+                    </textarea>
+
+                </td>
+
+            </tr>
+
+        </table>
+	</div>
+
+        <hr>
+
+        <!-- JUEGO FAVORITO -->
+        <h2 id="juego">Juego Favorito</h2>
+
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th colspan="2">League of Legends</th>
+            </tr>
+
+            <tr>
+
+                <!-- VIDEO -->
+                <td width="45%" valign="top">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/Dj8iY4XUm7c"
+                        title="Viego Highlights"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+
+                </td>
+
+                <!-- INFO -->
+                <td valign="top">
+
+                    <p>
+                        <strong>Género:</strong>
+                        MOBA multijugador en línea
+                    </p>
+
+                    <p><strong>Habilidades que desarrolla:</strong></p>
+
+                    <ul>
+                        <li>Pensamiento estratégico</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Toma de decisiones bajo presión</li>
+                        <li>Comunicación efectiva</li>
+                    </ul>
+
+                    <p>
+                        <a href="https://www.leagueoflegends.com/es-es/"
+                            target="_blank">
+                            Página Oficial del Juego
+                        </a>
+                    </p>
+
+                    <p><strong>Personaje favorito:</strong> Viego</p>
+
+                    <hr>
+
+                    <h3>¿Por qué es mi juego favorito?</h3>
+
+                    <p>
+                        League of Legends es mi juego favorito porque no solo
+                        depende de la habilidad mecánica, sino también de la
+                        estrategia, la toma de decisiones y el trabajo en equipo.
+                    </p>
+
+                    <p>
+                        Cada partida es diferente y obliga a pensar rápidamente
+                        bajo presión. Además, Viego es mi personaje favorito
+                        por su estilo agresivo y la capacidad de cambiar el
+                        rumbo de una partida.
+                    </p>
+
+                </td>
+
+            </tr>
+
+        </table>
+	</div>
+
+        <hr>
+
+        <!-- MISIÓN Y VISIÓN -->
+        <h2 id="mision">Misión y Visión Personal</h2>
+
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th>Aspecto</th>
+                <th>Descripción</th>
+            </tr>
+
+            <!-- MISIÓN -->
+            <tr>
+
+                <td valign="top" width="25%">
+
+                    <strong>Misión</strong>
+
+                    <br><br>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                        alt="Misión tecnológica">
+
+                </td>
+
+                <td>
+
+                    Ser un profesional íntegro en Ingeniería de Sistemas,
+                    aplicando conocimientos técnicos con responsabilidad ética
+                    y compromiso social.
+
+                    <br><br>
+
+                    Contribuir al desarrollo de soluciones tecnológicas que
+                    resuelvan problemas reales, colaborando en equipo y
+                    aprendiendo continuamente.
+
+                </td>
+
+            </tr>
+
+            <!-- VISIÓN -->
+            <tr>
+
+                <td valign="top">
+
+                    <strong>Visión</strong>
+
+                    <br><br>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=500"
+                        alt="Visión tecnológica">
+
+                </td>
+
+                <td>
+
+                    Consolidarme como un referente en el área de desarrollo
+                    de software e innovación tecnológica en Bolivia y Latinoamérica.
+
+                    <br><br>
+
+                    Liderar proyectos de transformación digital y generar
+                    soluciones de alto impacto social.
+
+                </td>
+
+            </tr>
+
+        </table>
+	</div>
+
+        <hr>
+
+        <!-- PROYECTOS -->
+        <h2 id="proyectos">Tareas y Proyectos Destacados</h2>
+
+	<div class="table-wrapper">
+        <table>
+
+            <tr>
+                <th>Nº</th>
+                <th>Proyecto</th>
+                <th>Materia</th>
+                <th>Estado</th>
+                <th>Link</th>
+            </tr>
+
+            <tr>
+                <td align="center">1</td>
+                <td>Sistema ATM-SGS</td>
+                <td>Proyecto Integrador</td>
+                <td align="center">En curso</td>
+
+                <td>
+                    <a href="https://github.com/Rook09MC/sgs-atm-system"
+                        target="_blank">
+                        Proyecto
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">2</td>
+                <td>Sistema hospitalario</td>
+                <td>Proyecto Integrador</td>
+                <td align="center">Completado</td>
+
+                <td>
+                    <a href="https://github.com/LuisFabianHerrera/SI-SISTEMA_HOSPITALARIO-11-25"
+                        target="_blank">
+                        Proyecto
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">3</td>
+                <td>Sistema de recursos electrónicos</td>
+                <td>Proyecto Integrador</td>
+                <td align="center">Completado</td>
+
+                <td>
+                    <a href="https://github.com/Rook09MC/SistGestionRecursos"
+                        target="_blank">
+                        Proyecto
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+	</div>
+
+        <hr>
+
+        <!-- REDES -->
+        <footer>
+
+            <h3 align="center" id="redes">Redes Sociales</h3>
+
+	<div class="table-wrapper">
+            <table>
+
+                <tr>
+                    <th>Red Social</th>
+                    <th>Enlace</th>
+                </tr>
+
+                <tr>
+
+                    <td align="center">Facebook</td>
+
+                    <td align="center">
+
+                        <a href="https://www.facebook.com/100073454958833"
+                            target="_blank">
+                            Ver perfil
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td align="center">Instagram</td>
+
+                    <td align="center">
+
+                        <a href="https://www.instagram.com/rook__mc"
+                            target="_blank">
+                            Ver perfil
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td align="center">TikTok</td>
+
+                    <td align="center">
+
+                        <a href="https://www.tiktok.com/@roojmc"
+                            target="_blank">
+                            Ver perfil
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            </table>
+	</div>
+        </footer>
+    </div>
+</body>
+</html>
